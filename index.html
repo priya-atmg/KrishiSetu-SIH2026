@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiSetu - Market Intelligence Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-green-700 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">🌾 KrishiSetu (कृषिसेतु)</h1>
+            <span class="text-sm bg-green-800 px-3 py-1 rounded">MahaAgri Market Connect</span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-6">
+        <!-- Stats Row -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+            <div class="bg-white p-5 rounded-lg shadow border-l-4 border-green-600">
+                <p class="text-gray-500 text-sm">Live Mandi Tracked</p>
+                <h3 class="text-2xl font-bold text-gray-800">42 Mandis (Maharashtra)</h3>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow border-l-4 border-blue-600">
+                <p class="text-gray-500 text-sm">Active Buyer Demand</p>
+                <h3 class="text-2xl font-bold text-gray-800">12,500 MT (Soybean, Onion)</h3>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow border-l-4 border-yellow-500">
+                <p class="text-gray-500 text-sm">Avg. Price Realisation Boost</p>
+                <h3 class="text-2xl font-bold text-gray-800">+18.4%</h3>
+            </div>
+        </div>
+
+        <!-- Price Discovery Section -->
+        <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-lg font-bold text-gray-800 mb-4">📊 Live Price Discovery & Trends</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-100 text-gray-600 text-sm">
+                            <th class="p-3">Commodity</th>
+                            <th class="p-3">Mandi / Market</th>
+                            <th class="p-3">Modal Price (₹/Quintal)</th>
+                            <th class="p-3">Trend</th>
+                            <th class="p-3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm text-gray-700">
+                        <tr class="border-b">
+                            <td class="p-3 font-semibold">Onions (Red)</td>
+                            <td class="p-3">Lasalgaon APMC</td>
+                            <td class="p-3 text-green-600 font-bold">₹2,450</td>
+                            <td class="p-3 text-green-500">↑ +5% (High Demand)</td>
+                            <td class="p-3"><button class="bg-green-600 text-white px-3 py-1 rounded text-xs">Create Lot</button></td>
+                        </tr>
+                        <tr class="border-b">
+                            <td class="p-3 font-semibold">Soybean</td>
+                            <td class="p-3">Latur APMC</td>
+                            <td class="p-3 text-green-600 font-bold">₹4,620</td>
+                            <td class="p-3 text-red-500">↓ -2% (Stable)</td>
+                            <td class="p-3"><button class="bg-green-600 text-white px-3 py-1 rounded text-xs">Create Lot</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
